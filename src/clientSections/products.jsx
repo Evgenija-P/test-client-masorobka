@@ -3,6 +3,9 @@ import { observer } from "mobx-react-lite";
 import productStore from "../store/products";
 import ProductList from "../components/productList";
 import Categories from "../components/categories";
+import meat from "../images/meat.png";
+import meatSm from "../images/meat-small.png";
+import meatNext from "../images/meat_1.png";
 
 const Products = observer(() => {
   useEffect(() => {
@@ -20,9 +23,9 @@ const Products = observer(() => {
       </div>
       <div className="bg-bg-black bg-products bg-no-repeat bg-cover bg-top relative">
         <div className="max-w-[1440px] mx-auto min-h-[858px] max-px-[120px]">
-          <img src="/src/images/meat.png" alt="meat" className="absolute top-14 left-0" />
-          <img src="/src/images/meat-small.png" alt="meat" className="absolute top-40 right-0" />
-          <img src="/src/images/meat_1.png" alt="meat" className="absolute top-[637px] right-0 z-[5]" />
+          <img src={meat} alt="meat" className="absolute top-14 left-0" />
+          <img src={meatSm} alt="meat" className="absolute top-40 right-0" />
+          <img src={meatNext} alt="meat" className="absolute top-[637px] right-0 z-[5]" />
           <ProductList />
         </div>
       </div>
